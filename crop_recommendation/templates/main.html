@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Recommendation System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        input[type="number"] {
+            width: calc(100% - 20px);
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Crop Recommendation System</h1>
+    <form action="result" method="GET">
+        <table>
+            <tr>
+                <td>Enter the Nitrogen Content</td>
+                <td><input type="number" name="nitrogen" required></td>
+            </tr>
+            <tr>
+                <td>Enter the Phosphorus Content</td>
+                <td><input type="number" name="phosphorus" required></td>
+            </tr>
+            <tr>
+                <td>Enter the Potassium Content</td>
+                <td><input type="number" name="potassium" required></td>
+            </tr>
+            <tr>
+                <td>Enter the Temperature</td>
+                <td><input type="number" name="temperature" required></td>
+            </tr>
+            <tr>
+                <td>Enter the Humidity</td>
+                <td><input type="number" name="humidity" required></td>
+            </tr>
+            <tr>
+                <td>Enter the soil Ph</td>
+                <td><input type="number" name="ph" required></td>
+            </tr>
+            <tr>
+                <td>Enter the Rainfall</td>
+                <td><input type="number" name="rainfall" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" name="submit" value="Predict the crop"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
